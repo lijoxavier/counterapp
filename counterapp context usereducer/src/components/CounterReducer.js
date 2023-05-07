@@ -31,7 +31,7 @@ export const CounterReducer = (state, action) => {
             return {
                 ...state,
                 // count: state.count > 0 ? state.count - action.payload.decrVal : state.count
-                // solved count going negative after clicking DECREMENT .
+                // solved count going negative after clicking DECREMENT ..
                 count: state.count >= action.payload.decrVal ? state.count - action.payload.decrVal : state.count
             }
         case ACTIONS.TOGGLETEXT:
